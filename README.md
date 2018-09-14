@@ -19,7 +19,7 @@ Installation
 ------------
 
 ```
-$ ansible-galaxy install acch.regex-test
+$ ansible-galaxy install acch.regex_test
 ```
 
 Usage
@@ -68,7 +68,7 @@ The actual play needs to also define a unique *test_id*. Its purpose is to allow
     test_id: t1
   roles:
     - somerole
-    - regex-test
+    - acch.regex_test
 ```
 
 Example Playbook
@@ -87,7 +87,7 @@ myproject
 │   ├── myotherrole
 │   │   └── tasks
 │   │       └── main.yml
-│   └── regex-test
+│   └── acch.regex_test
 │       ├── files
 │       │   ├── pythonrpms.t1.rgx
 │       │   └── pythonrpms.t2.rgx
@@ -117,14 +117,14 @@ regex_test_runonce: false
     test_id: t1
   roles:
     - myrole
-    - regex-test
+    - acch.regex_test
 
 - hosts: myhosts
   vars:
     test_id: t2
   roles:
     - myotherrole
-    - regex-test
+    - acch.regex_test
 ```
 
 Troubleshooting
