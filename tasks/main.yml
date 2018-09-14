@@ -1,0 +1,38 @@
+---
+- block:  ## run_once: "{{ regex_test_runonce | default(true) }}"
+    - name: test | Check test identifier
+      assert:
+        that: test_id is defined
+        msg: Please define the variable 'test_id'!
+
+    - name: test | Install prereqs
+      action:
+        module: "{{ ansible_pkg_mgr }}"
+        name: rsync
+        state: present
+
+    - name: test | Deploy script and regex files
+      synchronize:
+        src: "{{ item }}"
+        dest: /var/tmp/test/
+        rsync_opts:
+          - "--exclude=.gitkeep"
+      loop:
+        - files/
+        - scripts/regex-test.sh
+
+    - name: test | Make script executable
+      file:
+        path: /var/tmp/test/regex-test.sh
+        mode: 0755
+
+    - name: "{{ test_id }} | Run regex tests"
+      shell: ./regex-test.sh <( {{ item.command }} ) {{ item.regex }}
+      args:
+        chdir: /var/tmp/test/
+        executable: /bin/bash
+      loop: "{{ regex_tests }}"
+      loop_control:
+        label: "{{ item.name }}"
+      changed_when: false
+  run_once: "{{ regex_test_runonce | default(true) }}"
