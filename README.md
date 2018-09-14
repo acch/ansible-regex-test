@@ -28,8 +28,8 @@ Usage
 The fact that the reference file will be interpreted as regular expressions means that you need to mask special characters in that file. Thus, run the following to generate a reference file from a command's output:
 
 ```
-/path/to/command > command.out
-while read string ; do printf '%s\n' "$string" | sed 's/[.[\*^$()+?{|]/\\&/g' ; done < command.out > command.rgx
+$ /path/to/command > command.out
+$ while read string ; do printf '%s\n' "$string" | sed 's/[.[\*^$()+?{|]/\\&/g' ; done < command.out > command.rgx
 ```
 
 Place the reference file (`command.rgx`) in the `files/` directory of the regex-test role and define your test(s) using host variables.
