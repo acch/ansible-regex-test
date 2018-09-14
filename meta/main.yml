@@ -1,0 +1,17 @@
+galaxy_info:
+  author: Achim Christ
+  description: Ansible role for comparing command output with reference file
+  license: MIT
+  min_ansible_version: 2.6
+
+  platforms:
+    - name: EL
+      versions:
+        - 6
+        - 7
+
+  galaxy_tags:
+    - regex
+    - test
+
+dependencies: []
