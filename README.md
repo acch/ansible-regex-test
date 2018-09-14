@@ -1,7 +1,7 @@
 Regex-test Ansible Role
 =======================
 
-[![GitHub Issues](https://img.shields.io/github/issues/acch/ansible-regex-test.svg)](https://github.com/acch/ansible-regex-test/issues) [![GitHub Stars](https://img.shields.io/github/stars/acch/ansible-regex-test.svg?label=github%20%E2%98%85)](https://github.com/acch/ansible-regex-test/) <!--[![Role Downloads](https://img.shields.io/ansible/role/d/22821.svg)](https://galaxy.ansible.com/acch/spectrum-regex-test/)--> [![License](https://img.shields.io/github/license/acch/ansible-regex-test.svg)](LICENSE)
+[![GitHub Issues](https://img.shields.io/github/issues/acch/ansible-regex-test.svg)](https://github.com/acch/ansible-regex-test/issues) [![GitHub Stars](https://img.shields.io/github/stars/acch/ansible-regex-test.svg?label=github%20%E2%98%85)](https://github.com/acch/ansible-regex-test/) [![Role Downloads](https://img.shields.io/ansible/role/d/29536.svg)](https://galaxy.ansible.com/acch/spectrum-regex-test/) [![License](https://img.shields.io/github/license/acch/ansible-regex-test.svg)](LICENSE)
 
 Ansible role for comparing command output with reference file
 
