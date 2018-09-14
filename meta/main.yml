@@ -1,4 +1,5 @@
 galaxy_info:
+  role_name: regex-test
   author: Achim Christ
   description: Ansible role for comparing command output with reference file
   license: MIT
