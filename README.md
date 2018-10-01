@@ -19,7 +19,7 @@ Installation
 ------------
 
 ```
-$ ansible-galaxy install acch.regex_test
+$ ansible-galaxy install --roles-path roles/ acch.regex_test
 ```
 
 Usage
@@ -48,7 +48,7 @@ regex_tests:
     regex: command.{{ test_id }}.rgx
 ```
 
-The purpose of the *test_id* variable is to allow for different variants of the same test.
+The purpose of the *test_id* variable is to allow for different variants of the same test. It must be defined for each individual play.
 
 Furthermore, specify if you want to run the tests for each individual host in the current play (`regex_test_runonce: false`), or only once for the entire play (`regex_test_runonce: true`).
 
