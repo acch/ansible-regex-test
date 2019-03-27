@@ -1,3 +1,4 @@
+---
 galaxy_info:
   role_name: regex_test
   author: Achim Christ
@@ -12,6 +13,8 @@ galaxy_info:
 
   galaxy_tags:
     - regex
+    - regular
+    - expression
     - test
 
 dependencies: []
