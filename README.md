@@ -1,7 +1,7 @@
 Regex-test Ansible Role
 =======================
 
-[![GitHub Issues](https://img.shields.io/github/issues/acch/ansible-regex-test.svg)](https://github.com/acch/ansible-regex-test/issues) [![GitHub Stars](https://img.shields.io/github/stars/acch/ansible-regex-test.svg?label=github%20%E2%98%85)](https://github.com/acch/ansible-regex-test/) [![Role Downloads](https://img.shields.io/ansible/role/d/29537.svg)](https://galaxy.ansible.com/acch/regex_test) [![License](https://img.shields.io/github/license/acch/ansible-regex-test.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/acch/ansible-regex-test.svg?branch=master)](https://travis-ci.org/acch/ansible-regex-test) [![GitHub Issues](https://img.shields.io/github/issues/acch/ansible-regex-test.svg)](https://github.com/acch/ansible-regex-test/issues) [![GitHub Stars](https://img.shields.io/github/stars/acch/ansible-regex-test.svg?label=github%20%E2%98%85)](https://github.com/acch/ansible-regex-test/) [![Role Downloads](https://img.shields.io/ansible/role/d/29537.svg)](https://galaxy.ansible.com/acch/regex_test) [![License](https://img.shields.io/github/license/acch/ansible-regex-test.svg)](LICENSE)
 
 Ansible role for comparing command output with reference file
 
